@@ -1,1 +1,9 @@
-<p class="empleado-componente">empleado works!</p>
+<p class="empleado-componente">Nombre: {{ nombre }}</p>
+<p class="empleado-componente">Apellido: {{ apellido }}</p>
+<p class="empleado-componente">
+  Edad: {{ edad < 18 ? "Menor de edad" : "Mayor de edad" }}
+</p>
+<p class="empleado-componente">Empresa: {{ empresa.value }}</p>
+
+Introduce la empresa; <input type="text" #empresa (keyup)="0" /> <br /><br />
+<!-- <input type="button" value="dale!" (click)="llamaEmpresa(empresa.value)" /> -->
