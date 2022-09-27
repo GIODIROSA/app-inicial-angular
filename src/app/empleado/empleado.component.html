@@ -5,5 +5,11 @@
 </p>
 <p class="empleado-componente">Empresa: {{ empresa.value }}</p>
 
-Introduce la empresa; <input type="text" #empresa (keyup)="0" /> <br /><br />
+Introduce la empresa;
+<input type="text" #empresa (keyup)="(0)" [disabled]="habilitacionCuadro" />
+
+<br /><br />
 <!-- <input type="button" value="dale!" (click)="llamaEmpresa(empresa.value)" /> -->
+
+Registrado: <input type="checkbox" id="registro" [checked]="usuRegistrado" />
+{{ getRegistradoUsuario() }}
