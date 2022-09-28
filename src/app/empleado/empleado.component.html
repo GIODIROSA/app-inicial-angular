@@ -10,6 +10,25 @@ Introduce la empresa;
 
 <br /><br />
 <!-- <input type="button" value="dale!" (click)="llamaEmpresa(empresa.value)" /> -->
+{{ textoDeRegistro }}
+<br />
+<br />
+Registrado:
+<input
+  type="radio"
+  name="nRegistro"
+  id="registro"
+  value="si"
+  [checked]="usuRegistrado"
+  (click)="setUsuarioRegistrado($event)"
+/>
 
-Registrado: <input type="checkbox" id="registro" [checked]="usuRegistrado" />
+No Registrado:
+<input
+  type="radio"
+  value="no"
+  name="nRegistro"
+  (click)="setUsuarioRegistrado($event)"
+/>
+
 {{ getRegistradoUsuario() }}
