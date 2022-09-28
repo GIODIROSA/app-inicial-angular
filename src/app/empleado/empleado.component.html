@@ -3,10 +3,20 @@
 <p class="empleado-componente">
   Edad: {{ edad < 18 ? "Menor de edad" : "Mayor de edad" }}
 </p>
-<p class="empleado-componente">Empresa: {{ empresa.value }}</p>
+<p class="empleado-componente">Empresa: {{ empresa }}</p>
 
+<!-- to way binding -->
 Introduce la empresa;
-<input type="text" #empresa (keyup)="(0)" [disabled]="habilitacionCuadro" />
+<input type="text" [(ngModel)]="empresa" />
+<!--final to way binding -->
+
+<!-- property binding -->
+<!-- <p class="empleado-componente">Empresa: {{ empresa.value }}</p> -->
+
+<!-- 
+Introduce la empresa;
+<input type="text" #empresa (keyup)="(0)" [disabled]="habilitacionCuadro" /> -->
+<!-- final property binding -->
 
 <br /><br />
 <!-- <input type="button" value="dale!" (click)="llamaEmpresa(empresa.value)" /> -->

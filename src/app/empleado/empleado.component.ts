@@ -9,7 +9,9 @@ export class EmpleadoComponent implements OnInit {
   nombre = 'Juan';
   apellido = 'Díaz';
   edad = 18;
-  //empresa = 'Píldoras informáticas';
+  empresa = 'Google';
+
+
 
   /*   getEdad() {
     return this.edad;
@@ -18,7 +20,7 @@ export class EmpleadoComponent implements OnInit {
   /*   llamaEmpresa(value:String){
   } */
 
-  habilitacionCuadro = true;
+  habilitacionCuadro = false;
   usuRegistrado = false;
   textoDeRegistro = 'No hay nadie registrado';
 
